@@ -5,6 +5,7 @@
 ## Estado del código
 [![Build Status](https://travis-ci.org/melasimb/iwvg-ecosystem-Melany-Simbana.svg?branch=develop)](https://travis-ci.org/melasimb/iwvg-ecosystem-Melany-Simbana)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=es.upm.miw%3Aiwvg-ecosystem-Melany-Simbana&metric=alert_status)](https://sonarcloud.io/dashboard?id=es.upm.miw%3Aiwvg-ecosystem-Melany-Simbana)
+[![BCH compliance](https://bettercodehub.com/edge/badge/melasimb/iwvg-ecosystem-Melany-Simbana?branch=develop)](https://bettercodehub.com/)
 
 ## Ecosistema
 * Java
