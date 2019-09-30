@@ -7,7 +7,7 @@ branches:
 notifications:
   email:
     recipients:
-      - melasimb@gmail.com
+      - mm.simbana@alumnos.upm.es
 script:
   #Test unitario y de integracion con cobertura (jacoco)
   - mvn org.jacoco:jacoco-maven-plugin:prepare-agent verify
