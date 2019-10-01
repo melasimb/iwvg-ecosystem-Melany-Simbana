@@ -6,6 +6,8 @@ import org.apache.logging.log4j.LogManager;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 class DecimalCollectionTest {
     private DecimalCollection decimalCollection;
 
@@ -53,5 +55,10 @@ class DecimalCollectionTest {
     @Test
     void testMin() {
         assertEquals(-1.0, this.decimalCollection.min());
+    }
+
+    @Test
+    void testFullMinAndHigher() {
+        assertEquals("Min: -1.0, Higher: 3.0", this.decimalCollection.fullMinAndHigher());
     }
 }

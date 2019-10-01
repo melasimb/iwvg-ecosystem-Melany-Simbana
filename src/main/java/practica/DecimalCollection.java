@@ -40,4 +40,8 @@ public class DecimalCollection {
         this.validateIsNullOrEmpty();
         return Collections.min(this.collection);
     }
+
+    public String fullMinAndHigher() {
+        return "Min: " + this.min() + ", Higher: " + this.higher();
+    }
 }
