@@ -11,32 +11,55 @@ class UserTest {
     private User user;
 
     @BeforeEach
-    void setUp() {
-        user = new User(25, "melany", "simbaña");
+    void before() {
+        this.user = new User(25, "melany", "simbaña");
     }
 
     @Test
-    void initials() {
-        assertEquals("M.", user.initials());
+    void testInitials() {
+        assertEquals("M.", this.user.initials());
     }
 
     @Test
-    void getNumber() {
-        assertEquals(25, user.getNumber());
+    void testGetNumber() {
+        assertEquals(25, this.user.getNumber());
     }
 
     @Test
-    void getName() {
-        assertEquals("Melany", user.getName());
+    void testGetName() {
+        assertEquals("Melany", this.user.getName());
     }
 
     @Test
-    void getFamilyName() {
-        assertEquals("Simbaña", user.getFamilyName());
+    void testGetFamilyName() {
+        assertEquals("Simbaña", this.user.getFamilyName());
     }
 
     @Test
-    void fullName() {
-        assertEquals("Melany Simbaña", user.fullName());
+    void testFullName() {
+        assertEquals("Melany Simbaña", this.user.fullName());
+    }
+
+    @Test
+    void testFullNameAndNumber() {
+        assertEquals("Melany Simbaña 25", this.user.fullNameAndNumber());
+    }
+
+    @Test
+    void testSetNumber() {
+        this.user.setNumber(48);
+        assertEquals(48, this.user.getNumber());
+    }
+
+    @Test
+    void testSetName() {
+        this.user.setName("Aida");
+        assertEquals("Aida", this.user.getName());
+    }
+
+    @Test
+    void testSetFamilyName() {
+        this.user.setFamilyName("Sangucho");
+        assertEquals("Sangucho", this.user.getFamilyName());
     }
 }
