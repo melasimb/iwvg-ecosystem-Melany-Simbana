@@ -10,22 +10,27 @@ class FractionTest {
     private Fraction fraction;
 
     @BeforeEach
-    void setUp() {
-        fraction = new Fraction(6, 3);
+    void before() {
+        this.fraction = new Fraction(6, 3);
     }
 
     @Test
-    void decimal() {
-        assertEquals(2, fraction.decimal());
+    void testDecimal() {
+        assertEquals(2, this.fraction.decimal());
     }
 
     @Test
-    void getNumerator() {
-        assertEquals(6, fraction.getNumerator());
+    void testGetNumerator() {
+        assertEquals(6, this.fraction.getNumerator());
     }
 
     @Test
-    void getDenominator() {
-        assertEquals(3, fraction.getDenominator());
+    void testGetDenominator() {
+        assertEquals(3, this.fraction.getDenominator());
+    }
+
+    @Test
+    void testIsPropia() {
+        assertEquals(false, this.fraction.isPropia());
     }
 }
