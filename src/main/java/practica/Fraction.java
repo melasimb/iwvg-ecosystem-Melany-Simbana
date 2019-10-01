@@ -53,4 +53,23 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isOwn() {
+        if (this.numerator < this.denominator) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isNotOWn() {
+        if (this.isOwn()){
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public String fullFraction() {
+        return this.numerator + "/" + this.denominator + "=" + this.decimal();
+    }
 }
