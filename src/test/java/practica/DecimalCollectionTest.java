@@ -50,4 +50,8 @@ class DecimalCollectionTest {
         assertThrows(ArithmeticException.class, () -> new DecimalCollection().higher());
     }
 
+    @Test
+    void testMin() {
+        assertEquals(-1.0, this.decimalCollection.min());
+    }
 }
