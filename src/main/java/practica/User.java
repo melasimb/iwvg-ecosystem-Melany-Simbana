@@ -38,4 +38,15 @@ public class User {
         return this.familyName;
     }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
 }
