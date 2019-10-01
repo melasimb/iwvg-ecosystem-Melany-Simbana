@@ -40,7 +40,7 @@ class FractionTest {
     }
 
     @Test
-    void fullFraction() {
+    void testFullFraction() {
         assertEquals("6/3=2.0", this.fraction.fullFraction());
     }
 }
