@@ -72,8 +72,4 @@ public class Fraction {
         }
         return isNotOwn;
     }
-
-    public String fullFraction() {
-        return this.numerator + "/" + this.denominator + "=" + this.decimal();
-    }
 }
