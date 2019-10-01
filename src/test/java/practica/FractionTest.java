@@ -30,7 +30,12 @@ class FractionTest {
     }
 
     @Test
-    void testIsPropia() {
-        assertEquals(false, this.fraction.isPropia());
+    void testIsOwn() {
+        assertFalse(this.fraction.isOwn());
+    }
+
+    @Test
+    void isNotOwn() {
+        assertTrue(this.fraction.isNotOWn());
     }
 }

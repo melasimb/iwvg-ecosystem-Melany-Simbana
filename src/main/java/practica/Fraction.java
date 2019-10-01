@@ -53,11 +53,19 @@ public class Fraction {
         return denominator;
     }
 
-    public boolean isPropia() {
+    public boolean isOwn() {
         if (this.numerator < this.denominator) {
             return true;
         } else {
             return false;
+        }
+    }
+
+    public boolean isNotOWn() {
+        if (this.isOwn()){
+            return false;
+        } else {
+            return true;
         }
     }
 }
