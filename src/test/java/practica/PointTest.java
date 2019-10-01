@@ -51,14 +51,21 @@ class PointTest {
     }
 
     @Test
-    void setY() {
+    void testSetY() {
         this.point.setY(5);
         assertEquals(5, this.point.getY());
     }
 
     @Test
-    void setX() {
+    void testSetX() {
         this.point.setX(2);
         assertEquals(2, this.point.getX());
+    }
+
+    @Test
+    void testSetXY() {
+        this.point.setXY(9, 8);
+        assertEquals(9, this.point.getX());
+        assertEquals(8, this.point.getY());
     }
 }

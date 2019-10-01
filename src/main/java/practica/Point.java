@@ -44,8 +44,13 @@ public class Point {
         this.y = y;
     }
 
-    public void setX(int x){
+    public void setX(int x) {
         this.x = x;
+    }
+
+    public void setXY(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
     @Override
