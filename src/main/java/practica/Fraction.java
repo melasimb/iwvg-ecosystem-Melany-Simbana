@@ -54,19 +54,23 @@ public class Fraction {
     }
 
     public boolean isOwn() {
+        boolean isOwn;
         if (this.numerator < this.denominator) {
-            return true;
+            isOwn = true;
         } else {
-            return false;
+            isOwn = false;
         }
+        return isOwn;
     }
 
     public boolean isNotOWn() {
+        boolean isNotOwn;
         if (this.isOwn()){
-            return false;
+            isNotOwn = false;
         } else {
-            return true;
+            isNotOwn = true;
         }
+        return isNotOwn;
     }
 
     public String fullFraction() {
