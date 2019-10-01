@@ -68,4 +68,8 @@ public class Fraction {
             return true;
         }
     }
+
+    public String fullFraction() {
+        return this.numerator + "/" + this.denominator + "=" + this.decimal();
+    }
 }

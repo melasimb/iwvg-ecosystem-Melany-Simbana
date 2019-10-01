@@ -35,7 +35,12 @@ class FractionTest {
     }
 
     @Test
-    void isNotOwn() {
+    void testIsNotOwn() {
         assertTrue(this.fraction.isNotOWn());
+    }
+
+    @Test
+    void fullFraction() {
+        assertEquals("6/3=2.0", this.fraction.fullFraction());
     }
 }
